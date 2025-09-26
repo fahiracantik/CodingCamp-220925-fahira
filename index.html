@@ -1,12 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Fahira</title>
+
+  <!-- CSS External -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>Hello Guys</h1>
-    <h2>Apaa kabar?</h2>
+
+<body class="font-sans">
+
+  <!-- Header Content -->
+  <header class="main-header flex justify-between items-center p-5 bg-blue-600 text-white shadow">
+    <!-- Logo Website -->
+    <div class="flex items-center gap-3">
+      <div class="logo"></div>
+      <span class="font-bold text-xl"></span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <ul class="flex items-center gap-4">
+        <li><a class="px-3 py-2 rounded hover:bg-blue-500" href="#home">Home</a></li>
+        <li><a class="px-3 py-2 rounded hover:bg-blue-500" href="#profile">Profile</a></li>
+        <li><a class="px-3 py-2 rounded hover:bg-blue-500" href="#portfolio">Portfolio</a></li>
+        <li><a class="px-3 py-2 rounded hover:bg-blue-500" href="#message-us">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="min-h-[100vh] flex flex-col justify-center items-center gap-5 bg-gray-100">
+      <h1 class="text-[36px] font-bold">Hi <span id="username"></span>, Welcome to My Portfolio</h1>
+      <p class="text-[18px]">Hilmi Nurul Fahira | Web Development & Data Analyst Enthusiast</p>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="min-h-[100vh] flex flex-col justify-center items-center gap-5 max-w-[800px] mx-auto bg-white">
+      <h2 class="text-[30px] font-bold">About Me</h2>
+      <p class="text-[18px] text-center">
+        Lulusan Sarjana Teknik Informatika Universitas Teknologi Mataram dengan pengalaman mengembangkan aplikasi
+        berbasis web (PHP & MySQL) dan analisis data. Pernah membuat aplikasi Point of Sales (POS) berbasis web sebagai
+        skripsi serta dashboard analisis data dalam program MSIB di RevoU.
+      </p>
+
+      <div class="w-full grid md:grid-cols-2 gap-5 mt-5">
+        <div>
+          <h3 class="text-[24px] font-semibold">Education</h3>
+          <ul class="list-disc ml-5">
+            <li>Universitas Teknologi Mataram (2021–2025) – S1 Teknik Informatika</li>
+            <li>SMA Negeri 1 Sape (2018–2021) – Jurusan IPA</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-[24px] font-semibold">Skills</h3>
+          <ul class="list-disc ml-5">
+            <li>PHP, HTML, CSS, JavaScript</li>
+            <li>MySQL & Troubleshooting Aplikasi</li>
+            <li>Microsoft Office</li>
+            <li>Problem Solving, Manajemen Waktu</li>
+            <li>Teamwork, Komunikasi, Perhatian pada Detail</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="min-h-[100vh] flex flex-col justify-center items-center gap-5 max-w-[1000px] mx-auto bg-gray-100">
+      <h2 class="text-[30px] font-bold">Portfolio</h2>
+
+      <div class="grid md:grid-cols-2 gap-5 mt-5">
+
+        <!-- Project 1 -->
+        <div class="border p-4 rounded shadow bg-white">
+          <img src="image/a.png" alt="POS Web App" class="w-full h-[200px] object-cover rounded">
+          <h3 class="font-semibold text-[20px] mt-3">Rancang Bangun Aplikasi POS Berbasis Web (2025)</h3>
+          <p class="text-sm text-gray-600">
+            Dikembangkan menggunakan PHP, MySQL, HTML, CSS, dan JavaScript. 
+            Fitur: login multi-user, manajemen produk, pencatatan transaksi, laporan penjualan. 
+            Peran: desain database, coding, debugging, dokumentasi.
+          </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="border p-4 rounded shadow bg-white">
+          <img src="image/dashboard.png" alt="Dashboard Analysis" class="w-full h-[200px] object-cover rounded">
+          <h3 class="font-semibold text-[20px] mt-3">MSIB RevoU Tech Academy (2024)</h3>
+          <p class="text-sm text-gray-600">
+            Membuat dashboard analisis penjualan interaktif dengan Google Sheets & Looker Studio. 
+            Belajar software engineering dasar: testing, dokumentasi, kolaborasi tim.
+          </p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="border p-4 rounded shadow bg-white">
+          <img src="image/c.png" alt="Software Engineering Project" class="w-full h-[200px] object-cover rounded">
+          <h3 class="font-semibold text-[20px] mt-3">Intro to Software Engineering (2024)</h3>
+          <p class="text-sm text-gray-600">
+            Membuat aplikasi web sederhana untuk menghitung luas & keliling segitiga otomatis menggunakan HTML, CSS, dan JavaScript. 
+            Fokus pada validasi input dan tampilan sederhana.
+          </p>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="border p-4 rounded shadow bg-white">
+          <img src="image/b.jpg" alt="Organization Experience" class="w-full h-[200px] object-cover rounded">
+          <h3 class="font-semibold text-[20px] mt-3">Pengalaman Organisasi (2022)</h3>
+          <p class="text-sm text-gray-600">
+            UKM Welcome – Mengatur pelatihan & lokakarya pengembangan web. 
+            Berbagi ilmu & mentoring anggota baru.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Message Us Section -->
+        <section id="message-us" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
+            <h2 class="text-[30px] font-bold">Message Us</h2>
+            <form>
+                <div class="mb-[10px]">
+                    <label for="name" class="block mb-[5px]">Name:</label>
+                    <input type="text" id="name" name="name" class="border p-[8px] rounded w-[300px]" required>
+                </div>
+                <div class="mb-[10px]">
+                    <label for="email" class="block mb-[5px]">Email:</label>
+                    <input type="email" id="email" name="email" class="border p-[8px] rounded w-[300px]" required>
+                </div>
+                <div class="mb-[10px]">
+                    <label for="message" class="block mb-[5px]">Message:</label>
+                    <textarea id="message" name="message" class="border p-[8px] rounded w-[300px] h-[100px]"
+                        required></textarea>
+                </div>
+                <button type="button" onclick="validateForm()"
+                    class="bg-blue-500 text-white p-[10px] rounded hover:bg-blue-600">Send</button>
+            </form>
+        </section>
+  </main>
+
+  <!-- Footer Content -->
+  <footer class="bg-blue-600 text-white text-center p-4">
+    © 2025 Hilmi Nurul Fahira. All rights reserved.
+  </footer>
+
+  <!-- JavaScript External -->
+  <script src="js/script.js"></script>
 </body>
+
 </html>

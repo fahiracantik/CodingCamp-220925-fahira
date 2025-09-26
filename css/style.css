@@ -1,0 +1,101 @@
+/* Logo */
+.logo {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: lightgray;
+    background-image: url(../image/o.jpg); /* fotomu */
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #2563eb; /* aksen biru */
+    transition: all 0.4s ease;
+}
+
+/* Efek glow saat hover */
+.logo:hover {
+    box-shadow: 0 0 15px #2563eb, 0 0 30px #1e40af;
+    transform: scale(1.05); /* sedikit membesar */
+    border-color: #1e40af;
+}
+
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: #2563eb; /* biru utama */
+    border-bottom: 1px solid #1e40af;
+    color: white;
+}
+
+/* Navigation Links */
+.main-header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.main-header nav ul li a:hover {
+    background: #1e40af;
+    color: #f3f4f6;
+}
+
+/* Section Style */
+section {
+    padding: 50px 20px;
+}
+
+/* Portfolio Card */
+#portfolio .border {
+    background: white;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#portfolio .border:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    border-color: #2563eb;
+}
+
+/* Footer */
+footer {
+    background: #2563eb;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+/* Form */ form input, form textarea { outline: none; font-size: 14px; } form button { transition: 0.3s; } form button:hover { opacity: 0.9; }
+
+form button {
+    background: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #1e40af;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
